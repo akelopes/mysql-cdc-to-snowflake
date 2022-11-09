@@ -16,19 +16,6 @@ As part of this howto, I provide:
 - `credentials` folder with Snowflake keys
 - `.env` file with product versions
 
-## Usage
-
-You can run it with a single command, and see all logs in your terminal. Clone this repository and go to the 
-docker folder to run it:
-```sh
-git clone https://github.com/dariocazas/howto-debezium-to-snowflake.git
-cd howto-debezium-to-snowflake/services
-docker-compose up
-```
-
-You can stop this using `Ctrl+C`
-
-**It is important** go to the docker folder due to use a `.env` file available in this folder
 
 ## Context 
 
