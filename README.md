@@ -20,8 +20,9 @@ This could be scheduled to run on a regular basis using a scheduler or orchestra
 4. After the containers are up, execute `2-snowflake/init_sink.sh` to create the snowflake connector.
 5. Wait for tables to be created on your Snowflake account as per configurations of the snowflake connector.
 6. Once done, you can optionally run `3-database/init_db.sh` and `3-database/mysql_crud.sh` to create a new table and run some inserts and updates on the new table.
-7. change directory into `4-prototype` and execute `dbt run` to create a few models.
-8. Play around making changes and creating models.
+7. Update `4-prototype/models/schema.yml` sources identifiers to the correct source table in your Snowflake environment.
+8. Change directory into `4-prototype` and execute `dbt run` to create a few models.
+9. Play around making changes and creating models.
 
 ## Details
 

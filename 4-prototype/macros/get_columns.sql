@@ -2,7 +2,7 @@
     This macro will run the function object_keys from Snowflake in order to 
     collect the keys from payload.after of the latest entry in the source cdc
     table that is not of type 'd' (delete). It then processes the result with
-    fromjson function from Snowflake to transform the query result into a list.
+    fromjson function from DBT to transform the query result into a list.
 
     Output: list of column names from original table
 

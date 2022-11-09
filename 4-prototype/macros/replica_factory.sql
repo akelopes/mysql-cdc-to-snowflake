@@ -3,7 +3,7 @@
     table. 
 
     1. First it creates a CTE called prequery to read the metadata and content of the source table,
-    creating a filter of only the latest load_timestamp (record_content:payload.ts_ms). 
+    creating a filter of only the load_timestamp later than the previous run (record_content:payload.ts_ms). 
     2. It then creates a CTE called ranked_query to partition the prequery by load_timestamp, 
     sourcedb_binlog_file and sourcedb_binlog_pos.    
     3. from the ranked_query, only the latest snapshot is selected and two CTEs 
