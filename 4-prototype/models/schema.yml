@@ -1,0 +1,40 @@
+version: 2
+sources:
+  - name: cdc
+    schema: cdc
+    tables:
+      - name: addresses
+        identifier: MYSQLDB_INVENTORY_ADDRESSES_1962084162
+        columns:
+          - name: RECORD_METADATA
+          - name: RECORD_CONTENT
+      - name: customers
+        identifier: MYSQLDB_INVENTORY_CUSTOMERS_1595865099
+        columns:
+          - name: RECORD_METADATA
+          - name: RECORD_CONTENT
+      - name: geom
+        identifier: MYSQLDB_INVENTORY_GEOM_73593956
+        columns:
+          - name: RECORD_METADATA
+          - name: RECORD_CONTENT
+      - name: orders
+        identifier: MYSQLDB_INVENTORY_ORDERS_1763607739
+        columns:
+          - name: RECORD_METADATA
+          - name: RECORD_CONTENT
+      - name: products
+        identifier: MYSQLDB_INVENTORY_PRODUCTS_553037372
+        columns:
+          - name: RECORD_METADATA
+          - name: RECORD_CONTENT
+      - name: products_on_hand
+        identifier: MYSQLDB_INVENTORY_PRODUCTS_ON_HAND_789656404
+        columns:
+          - name: RECORD_METADATA
+          - name: RECORD_CONTENT
+
+models:
+  - name: replica_customers
+  - name: replica_addresses
+  - name: replica_geom

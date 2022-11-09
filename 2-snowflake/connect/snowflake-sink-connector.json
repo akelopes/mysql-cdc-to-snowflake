@@ -1,0 +1,19 @@
+{
+  "name": "snowflake-sink-connector",
+  "config": {
+    "connector.class": "com.snowflake.kafka.connector.SnowflakeSinkConnector",
+    "tasks.max": "1",
+    "topics.regex": "mysqldb.inventory.*",
+    "snowflake.url.name": "",
+    "snowflake.user.name": "",
+    "snowflake.private.key": "",
+    "snowflake.private.key.passphrase": "",
+    "snowflake.database.name": "cdc",
+    "snowflake.schema.name": "cdc",
+    "key.converter": "com.snowflake.kafka.connector.records.SnowflakeJsonConverter",
+    "value.converter": "com.snowflake.kafka.connector.records.SnowflakeJsonConverter",
+    "key.converter.schemas.enable": true,
+    "value.converter.schemas.enable": true,
+    "behavior.on.null.values": "IGNORE"
+  }
+}
